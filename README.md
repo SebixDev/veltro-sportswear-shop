@@ -1,27 +1,23 @@
 # VELTRO Sportswear
 
-Onlineshop für moderne Sportswear – **Made to Move.**
+**Made to Move.**
 
-Aktuell ist nur der grobe Seitenaufbau (Wireframe) mit grauen Platzhalter-Flächen vorhanden. Produkte, Texte, Bilder und Farben folgen später.
+VELTRO ist eine moderne Sportmarke und ein Onlineshop für Sportswear. Die Kleidung ist für Training, Running und Freizeit gemacht: funktional im Sport und bequem im Alltag.
 
-## Projektstruktur
+## Über die Marke
 
-```
-veltro/
-├── index.html
-├── style.css
-├── script.js
-└── README.md
-```
+VELTRO steht für Bewegung. Die Marke richtet sich an alle, die gern aktiv sind, vom Training im Studio über den Lauf am Morgen bis zum entspannten Tag zwischendurch. Das Design soll modern, klar und sportlich wirken.
 
-## Starten
+## Sortiment
 
-`index.html` im Browser öffnen oder in VS Code mit der Erweiterung „Live Server“ starten.
+- **Training:** Kleidung für Gym und Workout
+- **Running:** leichte Sportbekleidung zum Laufen
+- **Freizeit:** bequeme Styles für den Alltag
 
-## Seitenaufbau
+## Der Onlineshop
 
-1. Header mit Logo, Navigation und Warenkorb
-2. Hero-Bereich
-3. Kategorien
-4. Produktbereich
-5. Footer
+Im Shop sollen Kundinnen und Kunden die Kollektion nach Kategorien durchstöbern, Produkte ansehen und bequem online bestellen können.
+
+## Aktueller Stand
+
+Die Website befindet sich am Anfang der Entwicklung. Bisher gibt es nur den groben Seitenaufbau mit Platzhaltern. Produkte, Texte, Bilder und das endgültige Design folgen später.
