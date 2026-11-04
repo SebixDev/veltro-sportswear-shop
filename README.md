@@ -18,6 +18,3 @@ VELTRO steht für Bewegung. Die Marke richtet sich an alle, die gern aktiv sind,
 
 Im Shop sollen Kundinnen und Kunden die Kollektion nach Kategorien durchstöbern, Produkte ansehen und bequem online bestellen können.
 
-## Aktueller Stand
-
-Die Website befindet sich am Anfang der Entwicklung. Bisher gibt es nur den groben Seitenaufbau mit Platzhaltern. Produkte, Texte, Bilder und das endgültige Design folgen später.
