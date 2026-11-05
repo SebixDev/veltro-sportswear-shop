@@ -1,9 +1,10 @@
 :root {
-    --bg: #ffffff;
-    --grey-100: #f0f0f0;
-    --grey-200: #e0e0e0;
-    --grey-300: #cfcfcf;
-    --grey-600: #777777;
+    --bg: #161616;
+    --dot: #2b2b2b;
+    --grey-200: #262626;
+    --grey-300: #303030;
+    --border: #383838;
+    --text: #9a9a9a;
     --max: 1160px;
     --gap: 1.25rem;
     --radius: 8px;
@@ -13,9 +14,12 @@
 
 body {
     margin: 0;
+    min-height: 100vh;
     font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
-    color: var(--grey-600);
-    background: var(--bg);
+    color: var(--text);
+    background-color: var(--bg);
+    background-image: radial-gradient(var(--dot) 1.2px, transparent 1.2px);
+    background-size: 24px 24px;
 }
 
 .box {
@@ -23,6 +27,7 @@ body {
     align-items: center;
     justify-content: center;
     background: var(--grey-200);
+    border: 1px solid var(--border);
     border-radius: var(--radius);
     font-size: 0.9rem;
 }
