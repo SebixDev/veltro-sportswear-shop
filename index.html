@@ -13,44 +13,59 @@
 
 <body>
     <header class="site-header">
-        <div class="box logo">Logo</div>
+        <a class="logo" href="index.html">VELTRO</a>
 
         <nav class="nav" aria-label="Hauptnavigation">
-            <div class="box nav-item">Link</div>
-            <div class="box nav-item">Link</div>
-            <div class="box nav-item">Link</div>
+            <a href="#kategorien">Training</a>
+            <a href="#kategorien">Running</a>
+            <a href="#kategorien">Freizeit</a>
         </nav>
 
-        <div class="box cart">Warenkorb</div>
+        <a class="cart" href="#">Warenkorb</a>
     </header>
 
     <main>
         <section class="hero">
-            <div class="box hero-box">Hero</div>
+            <div class="hero-box">
+                <h1>Made to Move.</h1>
+                <p>Sportswear für Training, Running und Freizeit.</p>
+                <a class="btn" href="#kategorien">Jetzt entdecken</a>
+            </div>
         </section>
 
-        <section class="section">
-            <div class="box heading">Überschrift</div>
+        <section id="kategorien" class="section">
+            <h2>Kategorien</h2>
             <div class="grid grid-3">
-                <div class="box category">Kategorie</div>
-                <div class="box category">Kategorie</div>
-                <div class="box category">Kategorie</div>
+                <a class="category" href="#"><h3>Training</h3></a>
+                <a class="category" href="#"><h3>Running</h3></a>
+                <a class="category" href="#"><h3>Freizeit</h3></a>
             </div>
         </section>
 
         <section class="section">
-            <div class="box heading">Überschrift</div>
+            <h2>Beliebte Produkte</h2>
             <div class="grid grid-4">
-                <div class="box product">Produkt</div>
-                <div class="box product">Produkt</div>
-                <div class="box product">Produkt</div>
-                <div class="box product">Produkt</div>
+                <div class="product">Produkt</div>
+                <div class="product">Produkt</div>
+                <div class="product">Produkt</div>
+                <div class="product">Produkt</div>
             </div>
         </section>
     </main>
 
     <footer class="site-footer">
-        <div class="box footer-box">Footer</div>
+        <div class="footer-brand">
+            <p class="footer-logo">VELTRO</p>
+            <p>Made to Move.</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Rechtliches">
+            <a href="#">Impressum</a>
+            <a href="#">Datenschutz</a>
+            <a href="#">AGB</a>
+        </nav>
+
+        <p class="copyright">© 2026 VELTRO Sportswear</p>
     </footer>
 
     <script src="script.js"></script>
