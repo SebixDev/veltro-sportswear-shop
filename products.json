@@ -1,0 +1,5 @@
+[
+    { "id": 1, "name": "Pulse Training Shirt", "category": "Training", "price": 29.9 },
+    { "id": 2, "name": "Stride Running Shorts", "category": "Running", "price": 34.9 },
+    { "id": 3, "name": "Daily Freizeit Hoodie", "category": "Freizeit", "price": 54.9 }
+]
