@@ -15,7 +15,9 @@
     <header class="site-header">
         <a class="logo" href="index.html">VELTRO</a>
 
-        <nav class="nav" aria-label="Hauptnavigation">
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav">Menü</button>
+
+        <nav id="nav" class="nav" aria-label="Hauptnavigation">
             <a href="#kategorien">Training</a>
             <a href="#kategorien">Running</a>
             <a href="#kategorien">Freizeit</a>
@@ -43,13 +45,9 @@
         </section>
 
         <section class="section">
-            <h2>Beliebte Produkte</h2>
-            <div class="grid grid-4">
-                <div class="product">Produkt</div>
-                <div class="product">Produkt</div>
-                <div class="product">Produkt</div>
-                <div class="product">Produkt</div>
-            </div>
+            <h2>Produkte</h2>
+            <div id="product-list" class="grid grid-4"></div>
+            <p id="product-error" class="product-error" role="alert"></p>
         </section>
     </main>
 
