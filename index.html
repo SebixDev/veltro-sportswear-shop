@@ -18,9 +18,9 @@
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav">Menü</button>
 
         <nav id="nav" class="nav" aria-label="Hauptnavigation">
-            <a href="#kategorien">Training</a>
-            <a href="#kategorien">Running</a>
-            <a href="#kategorien">Freizeit</a>
+            <a href="#produkte" data-filter="Training">Training</a>
+            <a href="#produkte" data-filter="Running">Running</a>
+            <a href="#produkte" data-filter="Freizeit">Freizeit</a>
         </nav>
 
         <a class="cart" href="#">Warenkorb</a>
@@ -38,14 +38,22 @@
         <section id="kategorien" class="section">
             <h2>Kategorien</h2>
             <div class="grid grid-3">
-                <a class="category" href="#"><h3>Training</h3></a>
-                <a class="category" href="#"><h3>Running</h3></a>
-                <a class="category" href="#"><h3>Freizeit</h3></a>
+                <a class="category" href="#produkte" data-filter="Training"><h3>Training</h3></a>
+                <a class="category" href="#produkte" data-filter="Running"><h3>Running</h3></a>
+                <a class="category" href="#produkte" data-filter="Freizeit"><h3>Freizeit</h3></a>
             </div>
         </section>
 
-        <section class="section">
+        <section id="produkte" class="section">
             <h2>Produkte</h2>
+
+            <div class="filter-bar" role="group" aria-label="Produkte filtern">
+                <button class="filter-btn" type="button" data-filter="Alle" aria-pressed="true">Alle</button>
+                <button class="filter-btn" type="button" data-filter="Training" aria-pressed="false">Training</button>
+                <button class="filter-btn" type="button" data-filter="Running" aria-pressed="false">Running</button>
+                <button class="filter-btn" type="button" data-filter="Freizeit" aria-pressed="false">Freizeit</button>
+            </div>
+
             <div id="product-list" class="grid grid-4"></div>
             <p id="product-error" class="product-error" role="alert"></p>
         </section>
