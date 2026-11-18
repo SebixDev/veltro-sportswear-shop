@@ -18,14 +18,15 @@ Modern, klar und sportlich: dunkle Grautöne, ein kräftiger blauer Akzent und e
 
 ## Der Onlineshop
 
-Im Shop sollen Besucher die Kollektion nach Kategorien durchstöbern, Produkte ansehen und bestellen können.
+Im Shop können Besucher die Kollektion nach Kategorien durchstöbern und Produkte ansehen. Ein Klick auf eine Kategorie zeigt nur die passenden Produkte, mit "Alle" erscheint wieder das ganze Sortiment.
 
 ## Aktueller Stand
 
 Die Website befindet sich in der Entwicklung. Fertig sind bisher:
 
 - Startseite mit Navigation, Hero-Bereich und Kategorien
-- Bereich für beliebte Produkte (noch mit Platzhaltern)
+- Produkte, die aus einer Produktliste geladen werden (aktuell ein Beispielprodukt pro Kategorie, noch ohne Bilder)
+- Filter nach Kategorien
 - Footer mit Links zu Impressum, Datenschutz und AGB
 - Menü für die Handy-Ansicht
 - Dunkles Design mit Akzentfarbe und eigener Schrift
