@@ -2,6 +2,10 @@ const menuToggle = document.querySelector(".menu-toggle");
 const nav = document.getElementById("nav");
 const productList = document.getElementById("product-list");
 const productError = document.getElementById("product-error");
+const filterButtons = document.querySelectorAll(".filter-btn");
+
+let allProducts = [];
+let currentFilter = "Alle";
 
 function closeMenu() {
     nav.classList.remove("open");
@@ -52,6 +56,47 @@ function createProductCard(product) {
     return card;
 }
 
+function updateFilterButtons() {
+    filterButtons.forEach((button) => {
+        const isActive = button.dataset.filter === currentFilter;
+        button.setAttribute("aria-pressed", String(isActive));
+    });
+}
+
+function renderProducts() {
+    const visibleProducts = currentFilter === "Alle"
+        ? allProducts
+        : allProducts.filter((product) => product.category === currentFilter);
+
+    productList.replaceChildren();
+
+    if (visibleProducts.length === 0 && allProducts.length > 0) {
+        const empty = document.createElement("p");
+        empty.className = "product-empty";
+        empty.textContent = "In dieser Kategorie gibt es noch keine Produkte.";
+        productList.appendChild(empty);
+        return;
+    }
+
+    visibleProducts.forEach((product) => {
+        productList.appendChild(createProductCard(product));
+    });
+}
+
+function setFilter(filter) {
+    currentFilter = filter;
+    updateFilterButtons();
+    renderProducts();
+}
+
+document.addEventListener("click", (event) => {
+    const trigger = event.target.closest("[data-filter]");
+
+    if (trigger) {
+        setFilter(trigger.dataset.filter);
+    }
+});
+
 async function loadProducts() {
     try {
         const response = await fetch("products.json");
@@ -60,10 +105,8 @@ async function loadProducts() {
             throw new Error("Datei konnte nicht geladen werden");
         }
 
-        const products = await response.json();
-        products.forEach((product) => {
-            productList.appendChild(createProductCard(product));
-        });
+        allProducts = await response.json();
+        renderProducts();
     } catch (error) {
         productError.textContent = "Die Produkte konnten nicht geladen werden.";
         console.error(error);
