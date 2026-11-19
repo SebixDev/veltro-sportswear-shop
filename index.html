@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="VELTRO – Onlineshop für moderne Sportswear">
     <title>VELTRO Sportswear</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -23,13 +20,15 @@
             <a href="#produkte" data-filter="Freizeit">Freizeit</a>
         </nav>
 
-        <a class="cart" href="#">Warenkorb</a>
+        <button id="cart-open" class="cart" type="button">
+            Warenkorb <span id="cart-count" class="cart-count">0</span>
+        </button>
     </header>
 
     <main>
         <section class="hero">
             <div class="hero-box">
-                <h1>Made to Move.</h1>
+                <h1>Sport. Jeden Tag.</h1>
                 <p>Sportswear für Training, Running und Freizeit.</p>
                 <a class="btn" href="#kategorien">Jetzt entdecken</a>
             </div>
@@ -62,7 +61,7 @@
     <footer class="site-footer">
         <div class="footer-brand">
             <p class="footer-logo">VELTRO</p>
-            <p>Made to Move.</p>
+            <p>Sport. Jeden Tag.</p>
         </div>
 
         <nav class="footer-nav" aria-label="Rechtliches">
@@ -71,8 +70,26 @@
             <a href="#">AGB</a>
         </nav>
 
-        <p class="copyright">© 2026 VELTRO Sportswear</p>
+        <p class="copyright">Lernprojekt mit erfundener Beispielmarke. Kein echter Shop.</p>
     </footer>
+
+    <dialog id="cart-dialog" class="cart-dialog" aria-labelledby="cart-title">
+        <div class="cart-inner">
+            <div class="cart-head">
+                <h2 id="cart-title">Warenkorb</h2>
+                <button id="cart-close" class="cart-close" type="button">Schließen</button>
+            </div>
+
+            <p id="cart-empty" class="cart-empty">Dein Warenkorb ist leer.</p>
+
+            <ul id="cart-items" class="cart-items"></ul>
+
+            <div id="cart-foot" class="cart-foot" hidden>
+                <p class="cart-total">Gesamt: <span id="cart-total">0,00 €</span></p>
+                <button id="cart-clear" class="cart-clear" type="button">Warenkorb leeren</button>
+            </div>
+        </div>
+    </dialog>
 
     <script src="script.js"></script>
 </body>
