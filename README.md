@@ -25,7 +25,7 @@ Im Shop können Besucher die Kollektion nach Kategorien durchstöbern, Produkte 
 Die Website befindet sich in der Entwicklung. Fertig sind bisher:
 
 - Startseite mit Navigation, Hero-Bereich und Kategorien
-- Produkte, die aus einer Produktliste geladen werden (aktuell ein Beispielprodukt pro Kategorie, noch ohne Bilder)
+- Produkte, die aus einer Produktliste geladen werden (aktuell vier Beispielprodukte pro Kategorie, noch ohne Bilder)
 - Filter nach Kategorien
 - Warenkorb mit Mengenänderung, Gesamtsumme und Speicherung im Browser
 - Footer mit Links zu Impressum, Datenschutz und AGB
