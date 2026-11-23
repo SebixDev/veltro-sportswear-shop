@@ -1,5 +1,14 @@
 [
     { "id": 1, "name": "Pulse Training Shirt", "category": "Training", "price": 29.9 },
     { "id": 2, "name": "Stride Running Shorts", "category": "Running", "price": 34.9 },
-    { "id": 3, "name": "Daily Freizeit Hoodie", "category": "Freizeit", "price": 54.9 }
+    { "id": 3, "name": "Daily Freizeit Hoodie", "category": "Freizeit", "price": 54.9 },
+    { "id": 4, "name": "Core Training Hoodie", "category": "Training", "price": 59.9 },
+    { "id": 5, "name": "Flow Running Leggings", "category": "Running", "price": 44.9 },
+    { "id": 6, "name": "Relax Jogginghose", "category": "Freizeit", "price": 39.9 },
+    { "id": 7, "name": "Power Training Shorts", "category": "Training", "price": 32.9 },
+    { "id": 8, "name": "Breeze Running Shirt", "category": "Running", "price": 27.9 },
+    { "id": 9, "name": "Everyday T-Shirt", "category": "Freizeit", "price": 24.9 },
+    { "id": 10, "name": "Active Trainingshose", "category": "Training", "price": 44.9 },
+    { "id": 11, "name": "Light Running Jacke", "category": "Running", "price": 64.9 },
+    { "id": 12, "name": "Comfort Freizeit Jacke", "category": "Freizeit", "price": 69.9 }
 ]
