@@ -46,12 +46,29 @@
         <section id="produkte" class="section">
             <h2>Produkte</h2>
 
-            <div class="filter-bar" role="group" aria-label="Produkte filtern">
-                <button class="filter-btn" type="button" data-filter="Alle" aria-pressed="true">Alle</button>
-                <button class="filter-btn" type="button" data-filter="Training" aria-pressed="false">Training</button>
-                <button class="filter-btn" type="button" data-filter="Running" aria-pressed="false">Running</button>
-                <button class="filter-btn" type="button" data-filter="Freizeit" aria-pressed="false">Freizeit</button>
+            <div class="toolbar">
+                <div class="filter-bar" role="group" aria-label="Produkte filtern">
+                    <button class="filter-btn" type="button" data-filter="Alle" aria-pressed="true">Alle</button>
+                    <button class="filter-btn" type="button" data-filter="Training" aria-pressed="false">Training</button>
+                    <button class="filter-btn" type="button" data-filter="Running" aria-pressed="false">Running</button>
+                    <button class="filter-btn" type="button" data-filter="Freizeit" aria-pressed="false">Freizeit</button>
+                </div>
+
+                <div class="search-sort">
+                    <label class="visually-hidden" for="search">Produkte suchen</label>
+                    <input id="search" class="field" type="search" placeholder="Produkte suchen" autocomplete="off">
+
+                    <label class="visually-hidden" for="sort">Produkte sortieren</label>
+                    <select id="sort" class="field">
+                        <option value="empfohlen">Empfohlen</option>
+                        <option value="preis-auf">Preis aufsteigend</option>
+                        <option value="preis-ab">Preis absteigend</option>
+                        <option value="name">Name A–Z</option>
+                    </select>
+                </div>
             </div>
+
+            <p id="result-count" class="result-count" aria-live="polite"></p>
 
             <div id="product-list" class="grid grid-4"></div>
             <p id="product-error" class="product-error" role="alert"></p>
